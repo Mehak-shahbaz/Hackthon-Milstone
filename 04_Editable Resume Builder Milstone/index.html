@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder</h1>
+    <form id="Resume-form">
+       <fieldset>
+        <h1>Personal Information</h1>
+         <label for name="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name">
+       </fieldset>
+       <fieldset>
+        
+         <label for email="email">Email Address:</label>
+            <input type="text" id="email" placeholder="Enter your Email Address">
+        </fieldset>
+
+        <fieldset>
+             <label for phone no="phone no">Contact No:</label>
+                <input type="number" id="phone no" placeholder="Enter your Phone No">
+           </fieldset>
+
+           <fieldset>
+            <h1>Education</h1>
+            <label for edu="education">Education:</label>
+            <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+           </fieldset>
+
+           <fieldset>
+            <h1>Experience</h1>
+            <label for experience="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter your Experience" rows="4" required></textarea>
+           </fieldset>
+
+           <fieldset>
+            <h1>Skills</h1>
+            <label for skills="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter Your Skills" rows="4" required></textarea>
+           </fieldset>
+
+           <!-- <button type="submit"><b>Generate Resume</b></button> -->
+           <button type="button" id="generate-resume-button">Generate Resume</button>
+        </form>
+    <!-- Resume Display -->
+    <div id="resume-display">
+        <h2>Generated Resume</h2>
+        <p><strong>Name:</strong> <span id="display-name"></span></p>
+        <p><strong>Email:</strong> <span id="display-email"></span></p>
+        <p><strong>Education:</strong> <span id="display-education"></span></p>
+        <p><strong>Work Experience:</strong> <span id="display-experience"></span></p>
+        <p><strong>Skills:</strong> <span id="display-skills"></span></p>
+    </div>
+    </div>
+
+
+    <!-- <br>
+          Editable Resume -->
+    <!-- <div id="resume-display" contenteditable="true"></div>
+    resume will be generated below -->
+     <script src="script.js" type="module"></script>
+    
+</body>
+</html>
