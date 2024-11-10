@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builder</h1>
+
+    <div class="container">
+    <!-- Form for User Input -->
+    <form id="resume-form">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <h2>Education</h2>
+        <input type="text" id="education" placeholder="Education (e.g., B.Sc. in Computer Science)" required>
+
+        <h2>Work Experience</h2>
+        <textarea id="experience" placeholder="Work Experience (e.g., Software Developer at XYZ)" required></textarea>
+
+        <h2>Skills</h2>
+        <input type="text" id="skills" placeholder="Skills (e.g., JavaScript, TypeScript)" required>
+
+        <!-- Button to Generate Resume -->
+        <button type="button" id="generate-resume-button">Generate Resume</button>
+    </form>
+    
+    <!-- Resume Display -->
+    <div id="resume-display">
+        <h2>Generated Resume</h2>
+        <p><strong>Name:</strong> <span id="display-name"></span></p>
+        <p><strong>Email:</strong> <span id="display-email"></span></p>
+        <p><strong>Education:</strong> <span id="display-education"></span></p>
+        <p><strong>Work Experience:</strong> <span id="display-experience"></span></p>
+        <p><strong>Skills:</strong> <span id="display-skills"></span></p>
+    </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
